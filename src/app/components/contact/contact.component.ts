@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-contact',
@@ -32,17 +34,19 @@ export class ContactComponent {
       subject: this.contactForm.value.subject,
       message: this.contactForm.value.message,
       });
-      console.log(this.contactForm.value)
       if(response.status == 200){
-        alert("Message sent successfully")
+        Swal.fire({
+          title: "Good job!",
+          text: "Your message sent successfully!",
+          icon: "success"
+        });
       }
       else{
-        alert("Something went wrong")
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!, Try again."
+        });
       }
-      console.log(response)
   }
 }
-  // get name() { return this.contactForm.get('name');}
-  // get email() { return this.contactForm.get('email');}
-  // get subject() { return this.contactForm.get('subject');}
-  // get message() { return this.contactForm.get('message');}

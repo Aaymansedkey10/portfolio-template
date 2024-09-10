@@ -22,7 +22,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  padding: 7px !important;
 }
 .contact-container .contact_icons a:hover {
   background-color: #0563bb;
@@ -50,31 +50,45 @@
   border-color: #0563bb;
   outline: 0;
 }
+.btn-send {
+  width: max-content ;
+}
+.btn-send:hover{
+  background-color: #0563bb !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
 @media screen and (max-width: 992px) {
+  .contact-container {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
+    height: 100vh;
+  }
   input {
-    height: 45px;
+    height: 55px;
   }
   input,
   textarea {
     text-indent: 10% !important;
     font-size: 14px;
+    margin-bottom: 10% !important;
   }
   .contact-container form div span {
     left: 3%;
     top: 25%;
-    font-size: 15px;
   }
   .contact-container form div p {
     left: 3%;
-    top: 4%;
-    font-size: 13px;
+    top: 6%;
   }
-  .contact-container .contact_icons a {
+  /* .contact-container .contact_icons a {
     border: 1px solid #0563bb !important;
     color: #0563bb;
     border-radius: 50%;
     width: 28px;
     height: 27px;
     font-size: 16px;
+  } */
+  .btn-send {
+    width: 100% !important;
   }
 }
