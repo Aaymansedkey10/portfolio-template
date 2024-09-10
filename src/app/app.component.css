@@ -20,6 +20,6 @@
 }
 @media (min-width: 360px)  and (max-width: 768px) {
     .container-fluid {
-        height: 100vh !important;
+        height: max-content !important;
     }
 }
