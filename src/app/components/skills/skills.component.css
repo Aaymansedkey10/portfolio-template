@@ -1,0 +1,30 @@
+.skills-container h1 {
+  border-bottom: 1.5px solid #0563bb;
+  padding-bottom: 5px;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  color: #0563bb;
+}
+.skills-container h1::after {
+  content: "";
+  border-left: 1.5px solid transparent;
+  background: #0563bb;
+  position: absolute;
+  left: 35%;
+  width: 32%;
+  height: 8%;
+  top: 97.5%;
+}
+
+.skills-container .skills span i {
+  color: #0563bb;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .skill-content {
+    margin-bottom: 16%;
+  }
+}

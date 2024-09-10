@@ -1,0 +1,39 @@
+<section class="projects-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-lg-3 mb-2">My Projects</h1>
+        <swiper-container class="mySwiper" pagination="true" navigation="true">
+          <swiper-slide *ngFor="let project of projects">
+            <div class="card">
+              <img [src]="project.image" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    [href]="project.live"
+                    target="_blank"
+                    class="btn btn-primary rounded-pill text-capitalize me-3 me-lg-4"
+                  >
+                    Preview
+                  </a>
+                  <a
+                    [href]="project.code"
+                    target="_blank"
+                    class="btn btn-primary rounded-pill text-capitalize"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+</section>

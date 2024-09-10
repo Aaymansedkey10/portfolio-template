@@ -1,0 +1,45 @@
+.services-container h1{
+    border-bottom: 1.5px solid #0563bb;
+    padding-bottom: 5px;
+    width: max-content;
+    margin: auto;
+    position: relative;
+    color: #0563bb  ;
+ }
+ .services-container h1::after{
+    content: "";
+    border-left: 1.5px solid transparent;
+    background: #0563bb;
+    position: absolute;
+    left: 35%;
+    width: 32%;
+    height: 8%;
+    top: 97.5%;
+ }
+ .services-container .card{
+    height: 130px;
+ }
+ .services-container .card:hover{
+    border-top: 2px solid #0563bb;
+    box-shadow: #0563bb 0px 0px 10px;
+    transition: all 0.5s ease-in-out;
+ }
+ .services-container .card i {
+    font-size: 40px;
+    color: #0563bb;
+ }
+ .services-container .card:hover i{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+ .services-container .card:hover h5{
+    color: #0563bb;
+    transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+   i , h5 {
+      font-size: 16px !important;
+   }
+}
+
+

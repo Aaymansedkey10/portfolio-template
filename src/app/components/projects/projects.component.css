@@ -1,0 +1,62 @@
+.projects-container h1 {
+  border-bottom: 1.5px solid #0563bb;
+  padding-bottom: 5px;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  color: #0563bb;
+}
+.projects-container h1::after {
+  content: "";
+  border-left: 1.5px solid transparent;
+  background: #0563bb;
+  position: absolute;
+  left: 35%;
+  width: 32%;
+  height: 8%;
+  top: 97.5%;
+}
+
+.projects-container .mySwiper {
+  height: 85vh;
+  width: 100%;
+}
+.projects-container .card {
+  height: 92% !important ;
+  width: 100% !important;
+  margin: 10px 0 !important;
+  box-sizing: content-box !important;
+}
+.projects-container .card img {
+  height: 70% !important;
+  width: auto !important;
+  object-fit: fill;
+}
+.projects-container .card a {
+  width: 120px !important;
+  color: #0563bb !important;
+  background-color: transparent !important;
+  border: 1px solid #0563bb !important;
+}
+.projects-container .card a:hover {
+  box-shadow: inset 130px 0px 0px 0px #0563bb;
+  color: #fff !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0% !important;
+  top: 100% !important;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .projects-container .mySwiper {
+    height: 85vh;
+    width: 100%;
+  }
+}

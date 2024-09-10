@@ -1,0 +1,49 @@
+.about-container h1 {
+  border-bottom: 1.5px solid #0563bb;
+  padding-bottom: 5px;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  color: #0563bb;
+}
+.about-container h1::after {
+  content: "";
+  border-left: 1.5px solid transparent;
+  background: #0563bb;
+  position: absolute;
+  left: 35%;
+  width: 32%;
+  height: 8%;
+  top: 97.5%;
+}
+.about-container h2 span {
+  color: #0563bb !important;
+  font-weight: 700;
+  font-size: 30px;
+}
+.about-container .img-fluid {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.about-container .about-content h6 {
+  line-height: 1.8;
+}
+.about-container .about-content h5 {
+  color: #0563bb !important;
+}
+
+.about-container span {
+  font-size: 13px;
+  color: #0563bb;
+}
+
+.about-container h3 span {
+  color: #0563bb;
+  font-weight: 700;
+}
+.about-container .skills span i {
+  color: #0563bb;
+  font-weight: 900;
+  font-size: 40px;
+}

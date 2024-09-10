@@ -1,0 +1,80 @@
+.contact-container h1 {
+  border-bottom: 1.5px solid #0563bb;
+  padding-bottom: 5px;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  color: #0563bb;
+}
+.contact-container h1::after {
+  content: "";
+  border-left: 1.5px solid transparent;
+  background: #0563bb;
+  position: absolute;
+  left: 35%;
+  width: 32%;
+  height: 8%;
+  top: 97.5%;
+}
+.contact-container .contact_icons a {
+  border: 1px solid #0563bb !important;
+  color: #0563bb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.contact-container .contact_icons a:hover {
+  background-color: #0563bb;
+  color: #fff !important;
+  transition: all 0.5s ease-in-out;
+}
+.contact-container form div input,
+.contact-container form div textarea {
+  text-indent: 3%;
+}
+.contact-container form div span {
+  position: absolute;
+  top: 14%;
+  left: 1%;
+  color: #0563bb;
+}
+.contact-container form div p {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+  color: #0563bb;
+}
+.contact-container form .form-control:focus {
+  box-shadow: 0 0 0 1px #0563bb;
+  border-color: #0563bb;
+  outline: 0;
+}
+@media screen and (max-width: 992px) {
+  input {
+    height: 45px;
+  }
+  input,
+  textarea {
+    text-indent: 10% !important;
+    font-size: 14px;
+  }
+  .contact-container form div span {
+    left: 3%;
+    top: 25%;
+    font-size: 15px;
+  }
+  .contact-container form div p {
+    left: 3%;
+    top: 4%;
+    font-size: 13px;
+  }
+  .contact-container .contact_icons a {
+    border: 1px solid #0563bb !important;
+    color: #0563bb;
+    border-radius: 50%;
+    width: 28px;
+    height: 27px;
+    font-size: 16px;
+  }
+}

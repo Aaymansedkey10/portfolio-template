@@ -1,0 +1,25 @@
+.NavBar {
+    height: 100vh;
+    border-right: 2px solid #0563bb;
+}
+.container-fluid {
+    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    height: 100vh;
+
+}
+@media screen and (max-width: 992px) {
+    .NavBar {
+        height: 0vh;
+        border: none;
+    }
+    .container-fluid {
+        height: max-content !important;
+    
+    }
+    
+}
+@media (min-width: 360px)  and (max-width: 768px) {
+    .container-fluid {
+        height: 100vh !important;
+    }
+}

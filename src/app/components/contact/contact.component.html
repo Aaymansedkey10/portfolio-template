@@ -1,0 +1,87 @@
+<section class="contact-container py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mt-2 mt-lg-0">let's work together</h1>
+      </div>
+      <div class="col-12 text-center m-0 p-0">
+        <div class="w-75 m-auto">
+          <div
+            class="d-flex align-items-center justify-content-center my-3 contact_icons"
+          >
+            <a
+              href="https://www.linkedin.com/in/ayman-sedkey-0760252a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="text-center rounded-circl me-lg-4 me-3 p-lg-2 p-0"
+            >
+              <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </a>
+            <a
+              href="https://github.com/Aaymansedkey10"
+              class="text-center rounded-circl me-lg-4 me-3 p-lg-2 p-0"
+            >
+              <span><i class="fa-brands fa-github"></i></span>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100031219996272&mibextid=ZbWKwL"
+              class="text-center rounded-circl me-lg-4 me-3 p-lg-2 p-0"
+            >
+              <span><i class="fa-brands fa-facebook"></i></span>
+            </a>
+            <a
+              href="https://www.instagram.com/ayman_da_ana22?igsh=dHFndnZ4cDB1b3Ry"
+              class="text-center rounded-circl p-lg-2 p-0"
+            >
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </a>
+          </div>
+          <form
+            action="javascript:void(0)"
+            (submit)="sendMessage()"
+            [formGroup]="contactForm"
+          >
+            <div class="mb-4 mb-lg-3 position-relative">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="from_name"
+                placeholder="Name"
+              />
+              <span><i class="fa-solid fa-user"></i></span>
+            </div>
+            <div class="mb-4 mb-lg-3 position-relative">
+              <input
+                type="email"
+                class="form-control"
+                formControlName="from_email"
+                placeholder="Email"
+              />
+              <span><i class="fa-solid fa-envelope"></i></span>
+            </div>
+            <div class="mb-4 mb-lg-3 position-relative">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="subject"
+                placeholder="Subject"
+              />
+              <span><i class="fa-solid fa-pen"></i></span>
+            </div>
+            <div class="mb-4 mb-lg-3 mb-lg-3 position-relative">
+              <textarea
+                class="form-control"
+                formControlName="message"
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <p><i class="fa-solid fa-message"></i></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
