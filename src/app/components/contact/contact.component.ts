@@ -23,30 +23,46 @@ export class ContactComponent {
       message: ['', Validators.required],
     });
   }
-
-
+// function for sending the message 
   async sendMessage(){
-    emailjs.init("Ykreg4loTWs4uThbC")
-    let response = await emailjs.send("service_k3yfg9b","template_ys1c36v",{
-      from_name:this.contactForm.value.from_name,
-      to_name: this.contactForm.value.to_name,
-      from_email: this.contactForm.value.from_email,
-      subject: this.contactForm.value.subject,
-      message: this.contactForm.value.message,
+    emailjs.init("Ykreg4loTWs4uThbC");
+    if (this.contactForm.invalid) {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fill all the fields",
+        icon: "error"
       });
-      if(response.status == 200){
+      return;
+    }
+    try {
+      let response = await emailjs.send("service_k3yfg9b","template_ys1c36v",{
+        from_name: this.contactForm.value.from_name,
+        to_name: this.contactForm.value.to_name,
+        from_email: this.contactForm.value.from_email,
+        subject: this.contactForm.value.subject,
+        message: this.contactForm.value.message,
+      });
+      if (response.status === 200) {
         Swal.fire({
           title: "Good job!",
           text: "Your message sent successfully!",
           icon: "success"
         });
-      }
-      else{
+      } else {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Something went wrong!, Try again."
+          text: "Something went wrong! Try again."
         });
       }
+  
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong! Try again."
+      });
+    }
   }
+  
 }
