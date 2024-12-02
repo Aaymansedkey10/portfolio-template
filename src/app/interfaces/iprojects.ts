@@ -1,8 +1,8 @@
 export interface IProjects {
     id:number,
-    name:string,
+    title:string,
     image:string,
-    live:string,
+    demo:string,
     code:string,
     details:string
 }
