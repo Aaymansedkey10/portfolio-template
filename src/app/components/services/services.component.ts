@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IService } from '../../interfaces/iservice';
-import { tick } from '@angular/core/testing';
-import { title } from 'process';
 
 @Component({
   selector: 'app-services',
