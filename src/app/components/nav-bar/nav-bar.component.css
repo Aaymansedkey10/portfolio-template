@@ -50,7 +50,6 @@
   }
   .nav-bar-container .navbar-nav .nav-link {
     width: max-content !important;
-    /* color: #0563bb !important; */
   }
   .nav-bar-container .navbar-nav .nav-item:hover p {
     display: none !important;

@@ -17,7 +17,7 @@
     top: 97.5%;
  }
  .services-container .card{
-    height: 130px;
+    height: 120px;
  }
  .services-container .card:hover{
     border-top: 2px solid #0563bb;
@@ -39,6 +39,10 @@
 @media screen and (max-width: 992px) {
    i , h5 {
       font-size: 16px !important;
+   }
+   .services-container .card{
+      /* height: 10px; */
+        margin-bottom: 20px !important;
    }
 }
 
